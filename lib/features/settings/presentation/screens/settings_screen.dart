@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../core/constants/app_colors.dart';
-import '../services/backup_service.dart';
-import '../services/biometric_service.dart';
+import 'package:quanlychitieu/core/constants/app_colors.dart';
+import 'package:quanlychitieu/features/settings/services/backup_service.dart';
+import 'package:quanlychitieu/features/settings/services/biometric_service.dart';
 
 final biometricEnabledProvider = StateProvider<bool>((ref) => false);
 

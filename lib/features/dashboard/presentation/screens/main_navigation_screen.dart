@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../../core/constants/app_colors.dart';
-import '../../analytics/presentation/screens/analytics_screen.dart';
-import '../../settings/presentation/screens/settings_screen.dart';
-import '../../transaction/presentation/screens/add_transaction_screen.dart';
+import 'package:quanlychitieu/core/constants/app_colors.dart';
+import 'package:quanlychitieu/features/analytics/presentation/screens/analytics_screen.dart';
+import 'package:quanlychitieu/features/settings/presentation/screens/settings_screen.dart';
+import 'package:quanlychitieu/features/transaction/presentation/screens/add_transaction_screen.dart';
 import 'dashboard_screen.dart';
 
 class MainNavigationScreen extends StatefulWidget {

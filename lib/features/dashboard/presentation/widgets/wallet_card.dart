@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../../../core/constants/app_colors.dart';
-import '../../../../core/utils/currency_formatter.dart';
-import '../../../../core/utils/icon_helper.dart';
-import '../../../wallet/models/wallet_model.dart';
+import 'package:quanlychitieu/core/constants/app_colors.dart';
+import 'package:quanlychitieu/core/utils/currency_formatter.dart';
+import 'package:quanlychitieu/features/wallet/models/wallet_model.dart';
 
 class WalletCard extends StatelessWidget {
   final double totalBalance;

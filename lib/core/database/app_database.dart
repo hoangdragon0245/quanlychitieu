@@ -1,10 +1,8 @@
 import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:path/path.dart';
-import 'package:sqflite/sqflite.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
-import 'package:uuid/uuid.dart';
 import '../constants/default_categories.dart';
 
 class AppDatabase {
@@ -104,7 +102,6 @@ class AppDatabase {
   }
 
   Future<void> _seedInitialData(Database db) async {
-    const uuid = Uuid();
     final now = DateTime.now().toIso8601String();
 
     // Default Wallets

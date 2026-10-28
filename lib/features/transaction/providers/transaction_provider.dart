@@ -70,11 +70,7 @@ final transactionProvider = StateNotifierProvider<TransactionNotifier,
 });
 
 // Thống kê thu chi tháng hiện tại
-final currentMonthSummaryProvider = Provider<{
-  'income': double,
-  'expense': double,
-  'net': double,
-}>((ref) {
+final currentMonthSummaryProvider = Provider<Map<String, double>>((ref) {
   final transactionsState = ref.watch(transactionProvider);
   final now = DateTime.now();
 
