@@ -20,6 +20,8 @@ dependencies:
   local_auth: ^2.2.0
   uuid: ^4.4.2
   share_plus: ^10.0.2
+  sqflite_common_ffi: ^2.3.3
+  sqflite_common_ffi_web: ^0.4.3
 
 dev_dependencies:
   flutter_test:
