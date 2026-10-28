@@ -20,10 +20,12 @@ class AppDatabase {
   Future<Database> _initDB(String filePath) async {
     if (kIsWeb) {
       databaseFactory = databaseFactoryFfiWeb;
-      return await openDatabase(
+      return await databaseFactoryFfiWeb.openDatabase(
         filePath,
-        version: 1,
-        onCreate: _createDB,
+        options: OpenDatabaseOptions(
+          version: 1,
+          onCreate: _createDB,
+        ),
       );
     } else {
       if (Platform.isWindows || Platform.isLinux) {
