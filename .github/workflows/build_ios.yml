@@ -24,11 +24,14 @@ jobs:
       - name: Verify Flutter Version
         run: flutter --version
 
-      - name: Ensure iOS Platform Templates
-        run: flutter create --platforms=ios .
-
       - name: Install Dependencies
         run: flutter pub get
+
+      - name: Prepare CocoaPods
+        run: |
+          cd ios
+          pod install --repo-update
+          cd ..
 
       - name: Build iOS Application (Release, No CodeSign)
         run: flutter build ios --release --no-codesign
