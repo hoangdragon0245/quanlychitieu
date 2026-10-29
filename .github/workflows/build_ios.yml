@@ -24,6 +24,9 @@ jobs:
       - name: Verify Flutter Version
         run: flutter --version
 
+      - name: Ensure iOS Platform Templates
+        run: flutter create --platforms=ios .
+
       - name: Install Dependencies
         run: flutter pub get
 
